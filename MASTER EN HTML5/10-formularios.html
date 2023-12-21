@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formularios</title>
+        <link rel="icon" type="image/png" href="imagenes/leon.jpg"/>
+    </head>
+
+    <body>
+        <h1>Formularios</h1>
+        <form><!--Etiqueta con la que indentificamos el formulario-->
+            
+            <label for="nombre">Nombre:</label><!--Enlazamos etiqueta con input mediante el nombre que le damos a la id-->
+            <input type="text" id="nombre" placeholder="Nombre.."/>
+            
+         
+            <label for="descripcion">Descripcion</label>
+            <textarea id="descripcion"></textarea>
+    
+            <br/>
+            <br/>
+
+            <label>Email</label>
+            <input type="email"/>
+
+            <br/>
+            <br/>
+
+            <label>Password</label>
+            <input type="password">
+
+            <br/>
+            <br/>
+
+            <label>Genero</label>
+            <br/>
+            <label for="masculino">Hombre</label>
+            <input type="radio" name="genero"   id="masculino" value="hombre">
+            <label for="femenino">Mujer</label>
+            <input type="radio" name="genero"  id="femenino" value="mujer">
+
+            <br/>
+            <br/>
+            <label>Seleccionar</label>
+            <select>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="niño">Niño</option>
+            </select>
+
+            <br/>
+            <br/>
+
+            <label>checkbox</label>
+            <input type="checkbox" value="mayor de edad"/>
+
+            <br/>
+            <br/>
+
+            <label>Fecha</label>
+            <input type="date"/>
+
+            <br/>
+            <br/>
+
+            <label>Enviar ficheros</label>
+            <input type="file"/>
+
+            <br/>
+            <br/>
+
+            <label>Selector de números</label>
+            <input type="number"/>
+
+            <br/>
+            <br/>
+
+            <label>Rango</label>
+            <input type="range" name="rango"/>
+
+            <br/>
+            <br/>
+
+
+            <button type="submit">Enviar</button><!--Creamos el boton enviar-->
+            <button type="reset">Limpiar formulario</button>
+            
+        </form>
+
+    </body>
+
+</html>
